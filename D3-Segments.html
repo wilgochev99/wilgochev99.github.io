@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Sample Program Report</title>
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Ruluko' rel='stylesheet' type='text/css' />
+    <meta HTTP-EQUIV="X-UA-COMPATIBLE" CONTENT="IE=EmulateIE9">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta property="og:image" content="http://www.brightpointinc.com/interactive/images/Budget_202px.png">
+
+    <title>Samples Data Visualization D3.js</title>
+    <link type="text/css" rel="stylesheet" href="styles/style.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<meta name="description" content="Auburn University INSY4970 Lab">
+	<script src="//d3js.org/d3.v3.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="scripts/d3.min.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>	
+    <script src="//d3js.org/d3.v3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</head>
+<body style="height:900px; width:1280px; overflow:auto; font-family: 'Ruluko', sans-serif;" onload="main()">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="htttp://www.binarytheme.com">Data Visualization Project 2: Samples Program Report </a>
+            </div>
+            <!-- Collect the nav links for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="http://itsvlweb01/cs/logs%20pdn%20forms/Reports/Template/3/home.html">Geo</a>
+                    </li>
+                    <li><a href="http://itsvlweb01/cs/logs%20pdn%20forms/Reports/Template/3/Histogram.html">Histograms</a>
+                    </li>
+                    <li><a href="http://itsvlweb01/cs/logs%20pdn%20forms/Reports/Template/3/D3-Segments.html">D3-Segment</a>
+                    </li>
+                    <li><a href="http://itsvlweb01/cs/logs%20pdn%20forms/Reports/Template/3/plots.html">Plots</a>
+                    </li>
+                     <li><a href="http://itsvlweb01/cs/logs%20pdn%20forms/Reports/Template/3/about.html">About</a>
+                    </li>
+                    <li><a href="#"><strong>Contact: </strong>  chetwilganowski@auburn.edu</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <!--End Navigation -->
+
+<div class="bp-navBar" style="left:0px;border:0px;margin:80px">
+    <ul class="bp-navigation clearfix" style="list-style-type:none; margin:0px">
+        <li id="Button1Button" class="button selected">2015</li>
+        <li id="Button2Button" class="button">2014</li>
+        <li id="Button3Button" class="button">2013</li>
+    </ul>
+</div>	
+
+<div id="body" style="position: absolute; top:97px">
+
+<div class="col-md-15 text-right"> 
+<a href="http://itsvlweb01/cs/logs%20pdn%20forms/Reports/Template/3/D3-Segments.html" class="btn btn-primary">SMPL Prog Cost by Location $</a>
+<a href="http://itsvlweb01/cs/logs%20pdn%20forms/Reports/Template/3/D3-Segments_BU.html" class="btn btn-default">SMPL Prog Cost by Business Unit $</a>
+</div>
+
+<div class="row">
+   <div class="col-md-11 text-center">
+      <h4 class="events">D3 Interactive Segmentation - Choose a Year</h4>
+   </div>
+</div>
+<div id="viz"></div>
+    <div id="toolTip" class="tooltip" style="opacity:0;">
+        <div id="head" class="header"></div>
+        <div id="header1" class="header1"></div>
+        <div id="header2" class="header2"></div>
+        <div style="position:absolute; left:10px">
+            <div id="Button1Tip" class="tip" style="width:135px; left:0px; top:10px; position: absolute;">
+                <div class="header3"><br>2015 $</div>
+                <div class="header-rule"></div>
+                <div id="Button1Spend" class="header4"></div>
+            </div>
+            <div id="Button2Tip" class="tip" style="width:125px; left:140px; top:10px; position: absolute;">
+                <div class="header3"><br>2014 $</div>
+                <div class="header-rule"></div>
+                <div id="Button2Spend" class="header4"></div>
+            </div>
+            <div id="Button3Tip" class="tip" style="width:125px; left:272px; top:10px; position: absolute;">
+                <div class="header3"><br>2013 $</div>
+                <div class="header-rule"></div>
+                <div id="Button3Spend" class="header4"></div>
+            </div>
+        </div>
+        <div class="tooltipTail"></div>
+    </div>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>Sample Program Report</title>
+    <!--REQUIRED STYLE SHEETS-->
+    <!-- BOOTSTRAP CORE STYLE CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FONTAWESOME STYLE CSS -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- CUSTOM STYLE CSS -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- GOOGLE FONT -->
+    <link href='http://fonts.googleapis.com/css?family=Ruluko' rel='stylesheet' type='text/css' />
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="htttp://www.binarytheme.com">Data Visualization Project 2: Samples Program Report</a>
+            </div>
+            <!-- Collect the nav links for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="http://itsvlweb01/cs/logs%20pdn%20forms/Reports/Template/3/home.html">Geo</a>
+                    </li>
+                    <li><a href="http://itsvlweb01/cs/logs%20pdn%20forms/Reports/Template/3/Histogram.html">Histograms</a>
+                    </li>
+                    <li><a href="http://itsvlweb01/cs/logs%20pdn%20forms/Reports/Template/3/D3-Segments.html">D3-Segment</a>
+                    </li>
+                    <li><a href="http://itsvlweb01/cs/logs%20pdn%20forms/Reports/Template/3/plots.html">Plots</a>
+                    </li>
+                     <li><a href="http://itsvlweb01/cs/logs%20pdn%20forms/Reports/Template/3/about.html">About</a>
+                    </li>
+                    <li><a href="#"><strong>Contact: </strong>  chetwilganowski@auburn.edu</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <!--End Navigation -->
+
+    <!--Header section  -->
+
+<div id="body" style="position: relative; top:50px">
+
+<!--End Header section  -->
+
+    <!--About Section-->
+    <section class="for-full-back color-light " id="about">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-8 col-md-offset-2">
+                    <h1><i>Semiconductor Samples</i></h1>
+                    <h4>
+                        <strong>The samples program exists to support new business development. Sample units are provided at not cost to our customers in the new product develoment stage, and to the public in an effort to get young engineers comfortable with using our products.
+                        </strong>
+                    </h4>
+		    <h4>
+                        <strong>This dataset was modified in scale by the company, so actual numbers are not real. The proportions are the same, and given for analysis to understand if there any segments that stand out among the others. The major area of focus is determining cost differences among segments. Segments 
+			have been broken out by country, customer & business unit. Additionally, these orders are seen as the front line for our executives. They allocate their time to companies 
+			most engaged with our development processes, so I created an interactive flow to help business unit executives navigate where money is being spent on business development to help show this.
+                        </strong>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </section>  
+    
+<div class="row text-center">
+                <div class="col-md-8 col-md-offset-2">
+                    <h1>
+                        <strong><i>Page Rationalizations</i>
+                        </strong>
+                    </h1>
+                </div>
+</div>
+    
+<div class="row text-left">
+                <div class="col-md-8 col-md-offset-2">
+                    <h2>
+                        <strong><u>Geographic Maps:</u>
+                        </strong>
+                    </h2>
+		    <h3>
+                        <strong><i>Which regions have the most new business development activity?</i>
+                        </strong>
+                    </h3>
+		    <h4>
+                        <strong>1. <u>Cost by Location</u>: Python Plotly API D3 - Shows where the company is spending the most money to support new business.
+                        </strong>
+                    </h4>
+		    <h4>
+                        <strong>2. <u>Qty by Location</u>: Python Plotly API D3 - Cost is important, but the sheer number of sample units used indicates execution activities.
+                        </strong>
+                    </h4>
+		    <h4>
+                        <strong>3. <u>Orders by Location</u>: Python Plotly API D3 - When comparing this to the qty map it shows the number of order placement events that are taking place at the location. The more orders per country with the given quantity
+		                helps show the difference between a large order for goodwill to help with factory prototype runs while a small order would be more for personal usage by an engineer when learning about a product or 
+				creating a new design.
+                        </strong>
+                    </h4>
+		    <h2>
+                        <strong><u>Histograms:</u>
+                        </strong>
+                    </h2>
+		    <h3>
+                        <strong><i>What is the typical sample order size per part? Are there any segments that have a trend different from others?</i>
+                        </strong>
+                    </h3>
+		    <h4>
+                        <strong>1. <u>Per Customer (2015)</u>: Python Plotly API - Shows the distribution of sample quantity per customer. I capped it at 1k units, and it shows an anomoly group of customers that are getting more than 1k units of free samples.
+                        </strong>
+                    </h4>
+		    <h4>
+                        <strong>2. <u>Per Cust/Part (2015)</u>: Python Plotly API - Shows the distribution of sample units given to a customer per part they use. It is close to exponential, and most customers use very few samples in their evaluation process.
+				 I capped it at 1k units, and it shows an anomoly group of customers that are getting more than 1k units of free samples per part they use.
+                        </strong>
+                    </h4>
+		    <h4>
+                        <strong>3. <u>BU Per Cust/Part (2015)</u>: Python Plotly API - Shows the distribution of sample units given to a customer per part they use by BU. In order to see if there are differing trends by business unit for what they are providing their customers.
+					All seem to follow the typical exponential distribution. I capped it at 1k units, and it shows that the groups of customers that are getting more than 1k units of free samples per part they use are spread across all business units.
+                        </strong>
+                    </h4>
+		    <h4>
+                        <strong>4. <u>Per Country TTL (2015)</u>: Python Plotly API - Shows the distribution of sample quantity per Country. I capped it at 50k units, and it shows a segment of Countries are getting more than 50k units of free samples to support business development.
+                        </strong>
+                    </h4>
+		    <h4>
+                        <strong>5. <u>Per Country/Part (2015)</u>: Python Plotly API - Shows the distribution of sample units given to a customer per part they use. It is close to exponential, and most customers use very few samples in their evaluation process.
+				 I capped it at 1k units, and it shows an anomoly group of customers that are getting more than 1k units of free samples per part they use.
+                        </strong>
+                    </h4>
+		    <h2>
+                        <strong><u>D3-Interactive Segments:</u>
+                        </strong>
+                    </h2>
+		    <h3>
+                        <strong><i>How do the costs of the sample program compare across countries? Business Units? For business unit executives: What customers that my business unit serves are getting the most business development activity and funding? Which country should I focus on in my next trip, and what are the customers nearby. </i>
+                        </strong>
+                    </h3>
+		    <h4>
+                        <strong>1. <u>Sample Program Cost by Location ($USD)</u>: D3 Template - This visualization gives the executive a large amount of data that can be interactively sorted and filtered to see data more clearly. It starts by comparing the samples cost by country.
+					When an executive from the Cloud&Data business unit is visiting 
+					Thailand they can sort on the D3 and quickly choose their BU to see that they should try and visit Celiestica, Fabrinet & Delta Electronics, if possible. Size of the bubble offers a quick visual comparison
+					and if they need detailed data they can hover over to get the actual samples spending at that level over the last 3 years.
+                        </strong>
+                    </h4>
+		    <h4>
+                        <strong>2. <u>Sample Program Cost by Business Unit ($USD)</u>: D3 Template - This visualization is a flip of the first D3 in order to allow the user to compare total samples cost by business unit. The nature of this visualization is a structured guided filtering,
+					so this cut allows the user to see the starting comparison with differing segments.
+                        </strong>
+                    </h4>
+		    <h2>
+                        <strong><u>Interactive Plots:</u>
+                        </strong>
+                    </h2>
+		    <h3>
+                        <strong><i>How do the sample qty in each segment compare to the qty of revenue units. Are certain segments more or less effective? </i>
+                        </strong>
+                    </h3>
+		    <h4>
+                        <strong>1. <u>Sample & Revenue Quantity by Location (2015)</u>: Python Plotly API - This interactive plot uses the United States as a baseline, and compares sample qty vs revenue qty for a given country. The size of the bubble indicates the cost of the sample units provided. 
+					The grid allows for easy comparison of coordinates, and the graph can be filtered & zoomed based on the legend. A mouseover gives country detail, cost & revenue units for the country.
+                        </strong>
+                    </h4>
+		    <h4>
+                        <strong>2. <u>Sample & Revenue Quantity by Customer (2015)</u>: Python Plotly API - This interactive plot uses the customer Hon Hai as a baseline, and compares sample qty vs revenue qty for a given customer. The plotted data clearly indicates that Samsung receives the most free sample qty & highest value for business development needs.
+                        </strong>
+                    </h4>
+		    <h4>
+                        <strong>3. <u>Sample & Revenue Quantity by Business Unit (2015)</u>: Python Plotly API - This interactive plot uses the Automotive business unit as a baseline, and compares sample qty vs revenue qty for a given business unit. The plot clearly shows that the Mobile Solutions BU it the most costly 
+				in terms of the qty and cost of free samples provided for business development. Core gives the next largest amount of samples comparatively, while Industrial BU gives a similar quantity to Core but less costly. 
+                        </strong>                    
+                </div>
+
+</div>
+   
+    <!--End About Section-->
+
+
+</body>
+</html>
